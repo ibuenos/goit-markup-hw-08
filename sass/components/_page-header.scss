@@ -86,10 +86,7 @@
   }
   
   .mobile-sm__item:not(:last-child) {
-    padding-right: 10px;
     margin-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-      transform: border rotate(90deg);;
   }
   
   .mobile-btn {
@@ -151,7 +148,6 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    margin-bottom: 270px;
   }
   .navigation__list {
     @extend %list;
@@ -240,8 +236,7 @@
    @media screen and (min-width:768px) {
     display: block;
         margin-left: auto;
-        padding-top: 21px;
-        padding-bottom: 21px;
+
    }
    @media screen and (min-width: 1200px) {
     display: flex;
