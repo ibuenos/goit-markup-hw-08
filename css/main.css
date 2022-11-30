@@ -563,10 +563,8 @@ img {
 }
 
 .mobile-sm__item:not(:last-child) {
-  padding-right: 10px;
+  position: absolute;
   margin-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  transform: border rotate(90deg);
 }
 
 .mobile-btn {
@@ -626,7 +624,6 @@ img {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-bottom: 270px;
 }
 
 @media screen and (min-width: 768px) {
@@ -709,8 +706,7 @@ img {
   .contacts {
     display: block;
     margin-left: auto;
-    padding-top: 21px;
-    padding-bottom: 21px;
+
   }
 }
 @media screen and (min-width: 1200px) {
@@ -766,6 +762,8 @@ img {
 }
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   width: 100%;
   margin: 0 auto;
   max-width: 480px;
@@ -782,8 +780,8 @@ img {
 }
 
 .hero {
-  padding-top: 118px;
-  height: 400px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -803,7 +801,6 @@ img {
 
 @media screen and (min-width: 481px) {
   .hero {
-    height: 400px;
     max-width: 1200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero.jpg");
   }
@@ -815,9 +812,8 @@ img {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    padding-top: 200px;
+    padding-top: 118px;
     max-width: 1600px;
-    height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero.jpg");
   }
 }
@@ -1357,11 +1353,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .addres-sm-thumb {
+    justify-content: space-around;
+    margin-bottom: 48px;
     display: flex;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .addres-sm-thumb {
+    justify-content: space-around;
     margin-bottom: 48px;
   }
 }
@@ -1392,12 +1391,10 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-sm {
-    margin-right: auto;
   }
 }
 
